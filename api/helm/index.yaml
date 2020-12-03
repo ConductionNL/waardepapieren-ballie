@@ -3,14 +3,14 @@ entries:
   waardepapieren-balie:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2020-12-03T12:40:16.2413701Z"
+    created: "2020-12-03T12:44:08.9661252Z"
     description: '&quot;Naast deze JSON rest API is er ook een [graphql](/graphql)
       interface beschikbaar.&quot;'
-    digest: 75e904463c57559e492089a0a0618bd0dbb0b3642a8d987925aa6954874a797f
+    digest: 3f54aa352c1136a189fa1db4ece5a44e19f6afa20087777b647f5c8b1176eb0e
     home: www.waardepapieren.com
     icon: www.waardepapieren.com
     name: waardepapieren-balie
     urls:
     - waardepapieren-balie-0.1.0.tgz
     version: 0.1.0
-generated: "2020-12-03T12:40:16.2350207Z"
+generated: "2020-12-03T12:44:08.9591959Z"
