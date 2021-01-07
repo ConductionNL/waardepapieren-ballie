@@ -4,17 +4,17 @@
 
 settings:
   registryBase: docker.io/conduction
-  projectName: waardepapieren
-  name: waardepapieren
-  title: Waardepapieren
+  projectName: waardepapieren-balie
+  name: waardepapieren-balie
+  title: '&quot;Waardepapieren Balie&quot;'
   version: V1.0
   majorVersion: v1
-  id: aae458e7-dd33-494c-a99c-383a7b1658a0
-  description: 'Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.'
+  id: c645eb55-b681-4734-be10-8e8681a38321
+  description: '&quot;Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.&quot;'
   type: application
-  repro: https://github.com/ConductionNL/waardepapieren
+  repro: https://github.com/ConductionNL/waardepapieren-ballie
   demo: dev.waardepapieren-gemeentehoorn.commonground.nu
-  container: https://hub.docker.com/repository/docker/conduction/waardepapieren-php
+  container: https://hub.docker.com/repository/docker/conduction/waardepapieren-ballie-php
   domain: waardepapieren-gemeentehoorn.commonground.nu
   subdomain: false
   subpath: 
@@ -25,7 +25,7 @@ settings:
   state: Noord-Holland
   locality: Amsterdam
   unit: Common-Ground
-  env: dev
+  env: prod
   web: false
   internal: false
   debug: 1
@@ -52,7 +52,7 @@ settings:
   archiveEnabled: false
 
 security:
-  commongroundId: "aae458e7-dd33-494c-a99c-383a7b1658a0"
+  commongroundId: "c645eb55-b681-4734-be10-8e8681a38321"
   commongroundKey: "47e971de-2272-4e09-a141-134612e46a22"
   applicationKey: "47e971de-2272-4e09-a141-134612e46a22"
   userKey: "47e971de-2272-4e09-a141-134612e46a22"
