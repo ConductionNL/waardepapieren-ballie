@@ -121,3 +121,6 @@ installations:
     - type: helm
       url: "https://github.com/ConductionNL/waardepapieren-ballie/raw/master/api/helm/waardepapieren-balie-0.1.0.tgz"
 
+installations:
+    - type: helm
+      url: "https://raw.githubusercontent.com/ConductionNL/waardepapieren-ballie/master/api/helm/"
