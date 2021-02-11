@@ -5,7 +5,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-02-11T13:13:50.3051221Z"
+    created: "2021-02-11T13:45:59.8378567Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -37,14 +37,14 @@ entries:
   waardepapieren-balie:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2021-02-11T13:13:50.2907491Z"
+    created: "2021-02-11T13:45:59.8247638Z"
     description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
       beschikbaar.
-    digest: c311d40dae91bea1ef24740fbccc3464dd716f86a091c357cd4347e8e5384a7b
+    digest: fc7ca98e1fe804150a0a85d5d1419eec97048c0ae16f06560c1a80fbef943384
     home: www.waardepapieren.com
     icon: www.waardepapieren.com
     name: waardepapieren-balie
     urls:
     - waardepapieren-balie-0.1.0.tgz
     version: 0.1.0
-generated: "2021-02-11T13:13:50.2752054Z"
+generated: "2021-02-11T13:45:59.8109367Z"
