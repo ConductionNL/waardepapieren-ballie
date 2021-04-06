@@ -1,8 +1,8 @@
-# Waardepapieren Balie
+# proto-component-commonground
 
 Description
 ----
-The CommonGround Waardepapieren Balie provides a public servent focused interface for the creation of waardepapieren
+Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.
 
 Additional Information
 ----
@@ -75,10 +75,5 @@ But most imporantly, welcome! We strife to keep an active community at [commongr
 Credits
 ----
 Information about the authors of this component can be found [here](AUTHORS.md)
-
-Copyright © [Utrecht](https://www.utrecht.nl/) 2019
-
-
-
 
 Copyright © [Utrecht](https://www.utrecht.nl/) 2019
