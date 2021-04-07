@@ -4,23 +4,22 @@
 
 settings:
   registryBase: docker.io/conduction
-  projectName: proto-component-commonground
-  name: proto-component-commonground
+  projectName: waardepapieren-balie
+  name: waardepapieren-balie
   version: V1.0
   majorVersion: v1
   description: 'Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.'
-  repro: https://github.com/ConductionNL/Proto-component-commonground
+  repro: https://github.com/ConductionNL/waardepapieren-ballie
   demo: pc.zaakonline.nl
-  domain: conduction.nl
-  subdomain: proto-component-commonground
-  subpath: proto-component-commonground
+  domain: zuid-drecht.nl
+  subdomain: waardepapieren-balie
+  subpath: 
   subpathRouting: true
   env: dev
   web: false
   debug: 1
   cache: false
   type: component
-  id: 
   replicaCount: 1
   corsAllowOrigin: ['*']
   trustedHosts: '^.+$'
@@ -57,13 +56,12 @@ redis:
     enabled: false
   enabled: false
   redisPort: 6379
-  usePassword: false
 
 commonground:
   eherkenning:
-    location: https://conduction.nl/eherkenning
+    location: https://zuid-drecht.nl/eherkenning
   digispoof:
-    location: https://conduction.nl/digispoof
+    location: https://zuid-drecht.nl/digispoof
 
 nginx:
   repository: docker.io/conduction/protocomponent-nginx

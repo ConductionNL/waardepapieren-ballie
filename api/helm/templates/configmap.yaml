@@ -1,3 +1,4 @@
+{{- $redisServiceName := include "redis.fullname" . -}}
 apiVersion: v1
 kind: ConfigMap
 metadata:
