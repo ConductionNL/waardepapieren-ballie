@@ -1,0 +1,28 @@
+hslavich_onelogin_saml:
+    sp:
+        entityId: 'zuid-drecht.nl/saml/metadata'
+        assertionConsumerService:
+            url: 'zuid-drecht.nl/saml/acs'
+            binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST'
+        singleLogoutService:
+            url: 'zuid-drecht.nl/saml/logout'
+            binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
+        privateKey: ''
+    # Optional settings
+    baseurl: 'zuid-drecht.nl'
+    strict: true
+    debug: true
+    security:
+        nameIdEncrypted:       false
+        authnRequestsSigned:   false
+        logoutRequestSigned:   false
+        logoutResponseSigned:  false
+        wantMessagesSigned:    false
+        wantAssertionsSigned:  false
+        wantNameIdEncrypted:   false
+        requestedAuthnContext: true
+        signMetadata: false
+        wantXMLValidation: true
+        signatureAlgorithm: 'http://www.w3.org/2001/04/xmldsig-more#rsa-sha256'
+        digestAlgorithm: 'http://www.w3.org/2001/04/xmlenc#sha256'
+

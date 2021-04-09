@@ -6,25 +6,20 @@ settings:
   registryBase: docker.io/conduction
   projectName: waardepapieren-balie
   name: waardepapieren-balie
-  title: Waardepapieren Balie
   version: V1.0
   majorVersion: v1
-  id: c645eb55-b681-4734-be10-8e8681a38321
   description: 'Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.'
-  type: application
   repro: https://github.com/ConductionNL/waardepapieren-ballie
-  demo: dev.waardepapieren-gemeentehoorn.commonground.nu
-  container: https://hub.docker.com/repository/docker/conduction/waardepapieren-ballie-php
-  domain: waardepapieren-gemeentehoorn.commonground.nu
-  subdomain: false
-  subpath: ""
+  demo: pc.zaakonline.nl
+  domain: zuid-drecht.nl
+  subdomain: waardepapieren-balie
+  subpath: 
   subpathRouting: true
   env: dev
   web: false
-  internal: false
   debug: 1
-  cache: 1
-  sessionDuration: 900
+  cache: false
+  type: component
   replicaCount: 1
   corsAllowOrigin: ['*']
   trustedHosts: '^.+$'
@@ -44,12 +39,7 @@ settings:
   archiveEnabled: false
 
 security:
-  commongroundId: "c645eb55-b681-4734-be10-8e8681a38321"
-  commongroundKey: "47e971de-2272-4e09-a141-134612e46a22"
-  applicationKey: "47e971de-2272-4e09-a141-134612e46a22"
-  userKey: "47e971de-2272-4e09-a141-134612e46a22"
-  authorisationProviderUser: https://uc.zuid-drecht.nl
-  authorisationProviderApplication: https://openzaak.dev.zuid-drecht.nl/authorizaties/api/v1
+  applicationKey: "45c1a4b6-59d3-4a6e-86bf-88a872f35845"
 
 
 php:
@@ -66,13 +56,12 @@ redis:
     enabled: false
   enabled: false
   redisPort: 6379
-  usePassword: false
 
 commonground:
   eherkenning:
-    location: https://conduction.nl/eherkenning
+    location: https://zuid-drecht.nl/eherkenning
   digispoof:
-    location: https://conduction.nl/digispoof
+    location: https://zuid-drecht.nl/digispoof
 
 nginx:
   repository: docker.io/conduction/protocomponent-nginx
@@ -115,15 +104,6 @@ mercure:
   service:
     type: NodePort
     port: 80
-
-redis:
-    port: 6379
-    version: 5.0
-    memory: 100Mi
-    cpu: 100m
-    limits:
-        memory: 200Mi
-        cpu: 250m
 
 ingress:
   annotations:
