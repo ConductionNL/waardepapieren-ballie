@@ -48,8 +48,8 @@ class CreateSamlFilesCommand extends Command
 
         $output->writeln('Generating config.yaml');
         $config = $this->twig->render('saml/config.yaml.twig');
-        $fileSystem->dumpFile('config/config.yaml', $config);
-        $io->success(sprintf('Data written to %s/config.yaml.', '/app/config'));
+        $fileSystem->dumpFile('config/packages/config.yaml', $config);
+        $io->success(sprintf('Data written to %s/config.yaml.', '/app/config/packages'));
 
         $output->writeln('Generating metadata.xml');
         $config = $this->twig->render('saml/metadata.xml.twig');
