@@ -1,6 +1,6 @@
 publiccodeYmlVersion: "0.2"
 
-name: waardepapieren-ballie
+name: waardepapieren-balie
 applicationSuite: commonground
 url: "https://github.com/ConductionNL/waardepapieren-ballie"
 landingURL: "pc.zaakonline.nl"
