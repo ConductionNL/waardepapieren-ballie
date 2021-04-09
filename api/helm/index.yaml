@@ -5,7 +5,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-04-09T07:07:54.3355393Z"
+    created: "2021-04-09T07:48:24.4776295Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -37,7 +37,7 @@ entries:
   proto-component-commonground:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2021-04-09T07:07:54.1212489Z"
+    created: "2021-04-09T07:48:24.4144919Z"
     description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
       beschikbaar.
     digest: 0bc1e12e48b3cbc72a0438f163683da47ffda2e162f4e6723b48f3b130b43a8f
@@ -65,7 +65,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.11
-    created: "2021-04-09T07:07:54.4166242Z"
+    created: "2021-04-09T07:48:24.5137403Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -94,4 +94,30 @@ entries:
     urls:
     - charts/redis-12.7.7.tgz
     version: 12.7.7
-generated: "2021-04-09T07:07:53.9149334Z"
+  waardepapieren-balie:
+  - apiVersion: v1
+    appVersion: V1.0
+    created: "2021-04-09T07:48:24.4587821Z"
+    description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
+      beschikbaar.
+    digest: 6740529d90e473f86d43f4de1ec584655dadd7aebb012817192c36a2619cde3c
+    home: https://www.conduction.nl
+    icon: https://conductionnl.github.io/images/conduction_avatar_blue_on_transparant.svg
+    keywords:
+    - commonground
+    - haven
+    - nlx
+    - component
+    maintainers:
+    - email: ruben@conduction.nl
+      name: Ruben van der Linde
+    - email: info@conduction.nl
+      name: Conduction
+    name: waardepapieren-balie
+    sources:
+    - https://commonground.conduction.nl/
+    - https://www.commonground.nl/
+    urls:
+    - waardepapieren-balie-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-04-09T07:48:24.3992766Z"

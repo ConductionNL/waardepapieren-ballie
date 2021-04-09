@@ -8,7 +8,7 @@
                                 Location="zuid-drecht.nl/saml/logout" />
         <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
         <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                     Location="zuid-drecht.nl/saml/login"
+                                     Location="zuid-drecht.nl/saml/acs"
                                      index="1" />
 
     </md:SPSSODescriptor>

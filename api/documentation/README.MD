@@ -1,4 +1,4 @@
-# proto-component-commonground
+# waardepapieren-balie
 
 Description
 ----

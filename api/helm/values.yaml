@@ -4,15 +4,15 @@
 
 settings:
   registryBase: docker.io/conduction
-  projectName: waardepapieren-balie
-  name: waardepapieren-balie
+  projectName: waardepapieren-ballie
+  name: waardepapieren-ballie
   version: V1.0
   majorVersion: v1
   description: 'Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.'
   repro: https://github.com/ConductionNL/waardepapieren-ballie
   demo: pc.zaakonline.nl
   domain: zuid-drecht.nl
-  subdomain: waardepapieren-balie
+  subdomain: waardepapieren-ballie
   subpath: 
   subpathRouting: true
   env: dev
@@ -20,6 +20,7 @@ settings:
   debug: 1
   cache: false
   type: component
+  id: 
   replicaCount: 1
   corsAllowOrigin: ['*']
   trustedHosts: '^.+$'
@@ -54,9 +55,9 @@ php:
 redis:
   cluster:
     enabled: false
-  enabled: false
   redisPort: 6379
-
+  usePassword: false
+  enabled: false
 commonground:
   eherkenning:
     location: https://zuid-drecht.nl/eherkenning
