@@ -17,7 +17,7 @@ security:
             methods: [POST]
         main:
             anonymous: ~
-            pattern:    ^/
+            pattern: ^/
             saml:
                 # Match SAML attribute 'uid' with username.
                 # Uses getNameId() method by default.

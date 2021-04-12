@@ -37,10 +37,8 @@ class WaardepapierenController extends AbstractController
 
         // Handle post
         if ($request->isMethod('POST')) {
-            $certificate = $request->request->all();
-
             $variables['certificate'] = $request->request->all();
-            $variables['certificate'] = $commonGroundService->createResource($variables['certificate'], 'https://waardepapieren-gemeentehoorn.commonground.nu/api/v1/waar/certificates');
+            $variables['certificate'] = $commonGroundService->createResource($variables['certificate'], ['component' => 'waar', 'type' => 'certificates']);
         }
 
         return $variables;
