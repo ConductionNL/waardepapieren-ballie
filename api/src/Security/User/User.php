@@ -1,15 +1,13 @@
 <?php
 
-namespace App\Entity;
+namespace App\Security\User;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Hslavich\OneloginSamlBundle\Security\User\SamlUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
-/**
- * @ORM\Entity(repositoryClass=UserRepository::class)
- */
+
 class User implements SamlUserInterface
 {
     /* The username displayed */

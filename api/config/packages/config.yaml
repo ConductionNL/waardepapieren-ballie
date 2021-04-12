@@ -34,7 +34,7 @@ hslavich_onelogin_saml:
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
         privateKey: ''
     # Optional settings
-    baseurl: 'https://zuid-drecht.nl/balie/saml'
+    baseurl: 'https://zuid-drecht.nl/balie'
     strict: true
     debug: true
     security:
