@@ -2,11 +2,8 @@
 
 namespace App\Security\User;
 
-use App\Repository\UserRepository;
-use Doctrine\ORM\Mapping as ORM;
 use Hslavich\OneloginSamlBundle\Security\User\SamlUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
-
 
 class User implements SamlUserInterface
 {
