@@ -4,12 +4,9 @@
 
 namespace App\Command;
 
-use App\Service\ClaimService;
-use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Question\Question;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Filesystem\Filesystem;
 use Twig\Environment;
@@ -50,16 +47,6 @@ class CreateSamlFilesCommand extends Command
         $config = $this->twig->render('saml/config.yaml.twig');
         $fileSystem->dumpFile('config/packages/config.yaml', $config);
         $io->success(sprintf('Data written to %s/config.yaml.', '/app/config/packages'));
-
-        $output->writeln('Generating metadata.xml');
-        $config = $this->twig->render('saml/metadata.xml.twig');
-        $fileSystem->dumpFile('public/saml/metadata.xml', $config);
-        $io->success(sprintf('Data written to %s/metadata.xml.', '/app/public/saml'));
-
-        $output->writeln('Generating metadata');
-        $config = $this->twig->render('saml/metadata.xml.twig');
-        $fileSystem->dumpFile('public/saml/metadata', $config);
-        $io->success(sprintf('Data written to %s/metadata.', '/app/public/saml'));
 
         return 0;
     }
