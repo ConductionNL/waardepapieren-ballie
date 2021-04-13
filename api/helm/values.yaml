@@ -12,7 +12,7 @@ settings:
   repro: https://github.com/ConductionNL/waardepapieren-ballie
   demo: pc.zaakonline.nl
   domain: zuid-drecht.nl
-  subdomain: waardepapieren-ballie
+  subdomain: waardepapieren-balie
   subpath: balie
   subpathRouting: true
   env: dev
