@@ -35,7 +35,7 @@ hslavich_onelogin_saml:
         privateKey: ''
     # Optional settings
     baseurl: 'https://{{ app_domain }}{% if app_subpath|default %}/{{ app_subpath }}{% endif %}'
-    strict: true
+    strict: false
     debug: true
     security:
         nameIdEncrypted:       false
