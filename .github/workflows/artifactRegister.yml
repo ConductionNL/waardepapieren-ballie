@@ -18,7 +18,7 @@ jobs:
               id: process
               run: |
                   export ARTIFACTHUB_ID=$(grep ARTIFACTHUB_ID= .env | cut -d '=' -f2)
-                  if [ "${{ secrets.ARTIFACT_ID }}" != "" ] && [ "${{ secrets.ARTIFACT_SECRET }}" != "" ] && [ "$ARTIFACTHUB_ID" != "false" ] || [ "ARTIFACTHUB_ID" == "" ]; then
+                  if [ "${{ secrets.ARTIFACT_KEY }}" != "" ] && [ "${{ secrets.ARTIFACT_SECRET }}" != "" ] && [ "$ARTIFACTHUB_ID" != "false" ] || [ "ARTIFACTHUB_ID" == "" ]; then
                     echo "##[set-output name=success;]true"
                   else
                     echo "##[set-output name=success;]false"
