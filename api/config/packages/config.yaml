@@ -35,7 +35,7 @@ hslavich_onelogin_saml:
         privateKey: ''
     # Optional settings
     baseurl: 'https://mvp-ssctwente.commonground.nu/balie'
-    strict: true
+    strict: false
     debug: true
     security:
         nameIdEncrypted:       false

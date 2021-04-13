@@ -25,7 +25,7 @@ class User implements SamlUserInterface
     /* Always true */
     private $isActive;
 
-    public function __construct(string $username = '',  string $name = '', string $salt = null, $roles = [], $password = '')
+    public function __construct(string $username = '',  $roles = [], string $name = '', string $salt = null, $password = '')
     {
         $this->username = $username;
         $this->name = $name;
@@ -34,11 +34,6 @@ class User implements SamlUserInterface
         $this->password = $password;
         $this->roles = $roles;
 
-    }
-
-    public function __toString()
-    {
-        return $this->name;
     }
 
     public function getSalt()
