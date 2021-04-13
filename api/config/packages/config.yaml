@@ -25,16 +25,16 @@ hslavich_onelogin_saml:
                    ZOpx4swtgGdeoSpeRyrtMvRwdcciNBp9UZome44qZAYH1iqrpmmjsfI9pJItsgWu
                    3kXPjhSfj1AJGR1l9JGvJrHki1iHTA=='
     sp:
-        entityId: 'https://zuid-drecht.nl/balie/saml/metadata'
+        entityId: 'https://mvp-ssctwente.commonground.nu/balie/saml/metadata'
         assertionConsumerService:
-            url: 'https://zuid-drecht.nl/balie/saml/acs'
+            url: 'https://mvp-ssctwente.commonground.nu/balie/saml/acs'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST'
         singleLogoutService:
-            url: 'https://zuid-drecht.nl/balie/saml/logout'
+            url: 'https://mvp-ssctwente.commonground.nu/balie/saml/logout'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
         privateKey: ''
     # Optional settings
-    baseurl: 'https://zuid-drecht.nl/balie'
+    baseurl: 'https://mvp-ssctwente.commonground.nu/balie'
     strict: true
     debug: true
     security:
