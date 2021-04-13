@@ -13,6 +13,7 @@
                         <h2>Waardepapieren Balie</h2>
 
                         {% if app.user|default %}
+                            <p>{{ dump(app.user) }}</p>
                             <p>Kies hier een persoon en daarbij een waardepapier om op te halen.</p>
 
                             {% if people|default %}
