@@ -25,16 +25,16 @@ hslavich_onelogin_saml:
                    ZOpx4swtgGdeoSpeRyrtMvRwdcciNBp9UZome44qZAYH1iqrpmmjsfI9pJItsgWu
                    3kXPjhSfj1AJGR1l9JGvJrHki1iHTA=='
     sp:
-        entityId: 'https://mvp-ssctwente.commonground.nu/balie/saml/metadata'
+        entityId: 'https://mvp-ssctwente.commonground.nu/saml/metadata'
         assertionConsumerService:
-            url: 'https://mvp-ssctwente.commonground.nu/balie/saml/acs'
+            url: 'https://mvp-ssctwente.commonground.nu/saml/acs'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST'
         singleLogoutService:
-            url: 'https://mvp-ssctwente.commonground.nu/balie/saml/logout'
+            url: 'https://mvp-ssctwente.commonground.nu/saml/logout'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
         privateKey: ''
     # Optional settings
-    baseurl: 'https://mvp-ssctwente.commonground.nu/balie'
+    baseurl: 'https://mvp-ssctwente.commonground.nu'
     strict: false
     debug: true
     security:
