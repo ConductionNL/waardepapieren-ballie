@@ -5,7 +5,7 @@ hslavich_onelogin_saml:
             url: 'https://samltest.id/idp/profile/SAML2/Redirect/SSO'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
         singleLogoutService:
-            url: 'https://samltest.id/idp/profile/SAML2/POST/SSO'
+            url: 'https://mvp-ssctwente.commonground.nu'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
         x509cert: 'MIIDEjCCAfqgAwIBAgIVAMECQ1tjghafm5OxWDh9hwZfxthWMA0GCSqGSIb3DQEB
                    CwUAMBYxFDASBgNVBAMMC3NhbWx0ZXN0LmlkMB4XDTE4MDgyNDIxMTQwOVoXDTM4
