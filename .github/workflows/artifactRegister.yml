@@ -53,4 +53,4 @@ jobs:
                   url: https://artifacthub.io/api/v1/repositories/user
                   method: POST
                   payload: '{"name": "${{ env.NAME }}", "url": "${{ env.HELM }}"}'
-                  headers: '{"X-API-KEY-ID": "${{secrets.ARTIFACT_ID}}", "X-API-KEY_SECRET": "${{secrets.ARTIFACT_SECRET}}"}'
+                  headers: '{"X-API-KEY-ID": "${{secrets.ARTIFACT_ID}}", "X-API-KEY-SECRET": "${{secrets.ARTIFACT_SECRET}}"}'
