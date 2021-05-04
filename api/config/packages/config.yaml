@@ -18,7 +18,7 @@ hslavich_onelogin_saml:
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
         privateKey: ''
     # Optional settings
-    baseurl: 'https://balie.mvp-ssctwente.commonground.nu'
+    baseurl: 'http://balie.mvp-ssctwente.commonground.nu'
     strict: false
     debug: true
     security:
