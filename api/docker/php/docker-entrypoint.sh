@@ -51,8 +51,8 @@ if [ "$1" = 'php-fpm' ] || [ "$1" = 'php' ] || [ "$1" = 'bin/console' ]; then
 	done
 
 	# Generated required files for saml
-	echo "Generating SAML files"
-	bin/console app:saml:generate
+	#echo "Generating SAML files"
+	#bin/console app:saml:generate
 
 	if [ "$APP_ENV" != 'prod' ]; then
 
