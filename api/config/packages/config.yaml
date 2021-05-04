@@ -1,40 +1,24 @@
 hslavich_onelogin_saml:
     idp:
-        entityId: 'https://samltest.id/saml/idp'
+        entityId: 'https://Adfs.hoorn.nl/FederationMetaData/2007-06/FederationMetaData.xml'
         singleSignOnService:
-            url: 'https://samltest.id/idp/profile/SAML2/Redirect/SSO'
+            url: 'https://adfs.hoorn.nl/adfs/ls/'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
         singleLogoutService:
-            url: 'https://mvp-ssctwente.commonground.nu'
+            url: 'https://adfs.hoorn.nl/adfs/ls/'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
-        x509cert: 'MIIDEjCCAfqgAwIBAgIVAMECQ1tjghafm5OxWDh9hwZfxthWMA0GCSqGSIb3DQEB
-                   CwUAMBYxFDASBgNVBAMMC3NhbWx0ZXN0LmlkMB4XDTE4MDgyNDIxMTQwOVoXDTM4
-                   MDgyNDIxMTQwOVowFjEUMBIGA1UEAwwLc2FtbHRlc3QuaWQwggEiMA0GCSqGSIb3
-                   DQEBAQUAA4IBDwAwggEKAoIBAQC0Z4QX1NFKs71ufbQwoQoW7qkNAJRIANGA4iM0
-                   ThYghul3pC+FwrGv37aTxWXfA1UG9njKbbDreiDAZKngCgyjxj0uJ4lArgkr4AOE
-                   jj5zXA81uGHARfUBctvQcsZpBIxDOvUUImAl+3NqLgMGF2fktxMG7kX3GEVNc1kl
-                   bN3dfYsaw5dUrw25DheL9np7G/+28GwHPvLb4aptOiONbCaVvh9UMHEA9F7c0zfF
-                   /cL5fOpdVa54wTI0u12CsFKt78h6lEGG5jUs/qX9clZncJM7EFkN3imPPy+0HC8n
-                   spXiH/MZW8o2cqWRkrw3MzBZW3Ojk5nQj40V6NUbjb7kfejzAgMBAAGjVzBVMB0G
-                   A1UdDgQWBBQT6Y9J3Tw/hOGc8PNV7JEE4k2ZNTA0BgNVHREELTArggtzYW1sdGVz
-                   dC5pZIYcaHR0cHM6Ly9zYW1sdGVzdC5pZC9zYW1sL2lkcDANBgkqhkiG9w0BAQsF
-                   AAOCAQEASk3guKfTkVhEaIVvxEPNR2w3vWt3fwmwJCccW98XXLWgNbu3YaMb2RSn
-                   7Th4p3h+mfyk2don6au7Uyzc1Jd39RNv80TG5iQoxfCgphy1FYmmdaSfO8wvDtHT
-                   TNiLArAxOYtzfYbzb5QrNNH/gQEN8RJaEf/g/1GTw9x/103dSMK0RXtl+fRs2nbl
-                   D1JJKSQ3AdhxK/weP3aUPtLxVVJ9wMOQOfcy02l+hHMb6uAjsPOpOVKqi3M8XmcU
-                   ZOpx4swtgGdeoSpeRyrtMvRwdcciNBp9UZome44qZAYH1iqrpmmjsfI9pJItsgWu
-                   3kXPjhSfj1AJGR1l9JGvJrHki1iHTA=='
+        x509cert: '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'
     sp:
-        entityId: 'https://mvp-ssctwente.commonground.nu/saml/metadata'
+        entityId: 'http://balie.mvp-ssctwente.commonground.nu/saml/metadata'
         assertionConsumerService:
-            url: 'https://mvp-ssctwente.commonground.nu/saml/acs'
+            url: 'http://balie.mvp-ssctwente.commonground.nu/saml/acs'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST'
         singleLogoutService:
-            url: 'https://mvp-ssctwente.commonground.nu/saml/logout'
+            url: 'http://balie.mvp-ssctwente.commonground.nu/saml/logout'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
         privateKey: ''
     # Optional settings
-    baseurl: 'https://mvp-ssctwente.commonground.nu'
+    baseurl: 'https://balie.mvp-ssctwente.commonground.nu'
     strict: false
     debug: true
     security:
