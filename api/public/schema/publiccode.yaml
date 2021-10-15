@@ -3,11 +3,11 @@ publiccodeYmlVersion: "0.2"
 name: waardepapieren-balie
 applicationSuite: commonground
 url: "https://github.com/ConductionNL/waardepapieren-ballie"
-landingURL: "dev.waardepapieren-gemeentehoorn.commonground.nu"
+landingURL: "pc.zaakonline.nl"
 isBasedOn: "https://github.com/ConductionNL/Proto-component-commonground.git"
 softwareVersion: "V1.0"
-releaseDate: "2021-11-02"
-logo: www.waardepapieren.com
+releaseDate: "2021-06-07"
+logo: https://conductionnl.github.io/images/conduction_avatar_blue_on_transparant.svg
 monochromeLogo: img/logo-mono.svg
 
 inputTypes:
@@ -70,7 +70,7 @@ description:
         #          is and why one should need it.
 
         documentation: "https://github.com/ConductionNL/waardepapieren-ballie/blob/master/README.md"
-        apiDocumentation: "dev.waardepapieren-gemeentehoorn.commonground.nu"
+        apiDocumentation: "pc.zaakonline.nl"
 #
 #    features:
 #       - Very important feature

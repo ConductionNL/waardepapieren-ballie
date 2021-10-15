@@ -1,0 +1,37 @@
+hslavich_onelogin_saml:
+    idp:
+        entityId: 'https://Adfs.hoorn.nl/FederationMetaData/2007-06/FederationMetaData.xml'
+        singleSignOnService:
+            url: 'https://adfs.hoorn.nl/adfs/ls/'
+            binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
+        singleLogoutService:
+            url: 'https://adfs.hoorn.nl/adfs/ls/'
+            binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
+        x509cert: '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'
+    sp:
+        entityId: 'http://balie.mvp-ssctwente.commonground.nu/saml/metadata'
+        assertionConsumerService:
+            url: 'http://balie.mvp-ssctwente.commonground.nu/saml/acs'
+            binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST'
+        singleLogoutService:
+            url: 'http://balie.mvp-ssctwente.commonground.nu/saml/logout'
+            binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
+        privateKey: ''
+    # Optional settings
+    baseurl: 'http://balie.mvp-ssctwente.commonground.nu'
+    strict: false
+    debug: true
+    security:
+        nameIdEncrypted:       false
+        authnRequestsSigned:   false
+        logoutRequestSigned:   false
+        logoutResponseSigned:  false
+        wantMessagesSigned:    false
+        wantAssertionsSigned:  false
+        wantNameIdEncrypted:   false
+        requestedAuthnContext: true
+        signMetadata: false
+        wantXMLValidation: true
+        signatureAlgorithm: 'http://www.w3.org/2001/04/xmldsig-more#rsa-sha256'
+        digestAlgorithm: 'http://www.w3.org/2001/04/xmlenc#sha256'
+

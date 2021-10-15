@@ -73,6 +73,7 @@ Credits
 
 Information about the authors of this component can be found [here](AUTHORS.md)
 
+Copyright © [Utrecht](https://www.utrecht.nl/) 2019
 
 
 

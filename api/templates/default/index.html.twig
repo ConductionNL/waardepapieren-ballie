@@ -12,45 +12,51 @@
 
                         <h2>Waardepapieren Balie</h2>
 
-                        <p>Kies hier een persoon en daarbij een waardepapier om op te halen.</p>
+                        {% if app.user|default %}
+                            <p>{{ dump(app.user) }}</p>
+                            <p>Kies hier een persoon en daarbij een waardepapier om op te halen.</p>
 
-                        {% if people|default %}
+                            {% if people|default %}
 
-                            <form action="{{ path('app_default_index') }}" method="post">
-                                <div class="input">
-                                    <select name="person" class="input__control input__control--select" id="personInput"
-                                            required>
-                                        <option value="">Kies een persoon</option>
-                                        {% for person in people %}
-                                            <option
-                                                value="{{ person['@id'] }}">{{ person.naam.aanschrijfwijze }}</option>
-                                        {% endfor %}
-                                    </select>
-                                </div>
-
-                                {% if types|default %}
+                                <form action="{{ path('app_default_index') }}" method="post">
                                     <div class="input">
-                                        <select name="type"
-                                                class="input__control input__control--xl input__control--select"
-                                                id="typeInput" required>
-                                            <option value="">Kies een waardepapier</option>
-                                            {% for type in types %}
+                                        <select name="person" class="input__control input__control--select" id="personInput"
+                                                required>
+                                            <option value="">Kies een persoon</option>
+                                            {% for person in people %}
                                                 <option
-                                                    value="{{ type.type }}">{{ type.name }} </option>
+                                                    value="{{ person['@id'] }}">{{ person.naam.aanschrijfwijze }}</option>
                                             {% endfor %}
                                         </select>
                                     </div>
 
-                                {% endif %}
+                                    {% if types|default %}
+                                        <div class="input">
+                                            <select name="type"
+                                                    class="input__control input__control--xl input__control--select"
+                                                    id="typeInput" required>
+                                                <option value="">Kies een waardepapier</option>
+                                                {% for type in types %}
+                                                    <option
+                                                        value="{{ type.type }}">{{ type.name }} </option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
 
-                                <div class="input">
-                                    <button type="submit" class="btn btn--primary">Verder</button>
-                                </div>
+                                    {% endif %}
 
-                            </form>
+                                    <div class="input">
+                                        <button type="submit" class="btn btn--primary">Verder</button>
+                                    </div>
 
+                                </form>
+
+                            {% endif %}
+                        {% else %}
+                            <p>
+                                In deze applicatie kunt u waardepapieren van een persoon ophalen. <a class="pointer" href="{{ path('saml_login') }}">Login</a> om te starten.
+                            </p>
                         {% endif %}
-
                     {% else %}
 
                         <a href="{{ path('app_default_index') }}" class="backlink">Terug</a>
