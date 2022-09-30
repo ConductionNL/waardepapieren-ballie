@@ -7,7 +7,7 @@
         "ext-iconv": "*",
         "api-platform/api-pack": "^1.1",
         "conduction/commongroundbundle": "^2.*-dev",
-        "dompdf/dompdf": "^0.8.5",
+        "dompdf/dompdf": "^2.0.1",
         "endroid/qr-code-bundle": "^3.4",
         "hslavich/oneloginsaml-bundle": "2.1.4",
         "phpdocumentor/reflection-docblock": "^5.1",
